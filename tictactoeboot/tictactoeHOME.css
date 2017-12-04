@@ -1,0 +1,27 @@
+#std1{
+	margin-top: 50px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+#std2{
+	margin-top: 150px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+#std3{
+	float: right;
+	margin-top: -409px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+#std4{
+	float: right;
+	margin-top: -190px;
+    margin-bottom: 100px;
+    margin-right: 110px;
+    margin-left: 80px;
+	
+}
