@@ -1,3 +1,7 @@
+html body{
+    background-color: rgb(152, 160, 173) ;
+}
+
 #std1{
 	margin-top: 50px;
     margin-bottom: 100px;
@@ -5,23 +9,68 @@
     margin-left: 80px;
 }
 #std2{
-	margin-top: 150px;
-    margin-bottom: 100px;
+	margin-top: 250px;
+    margin-bottom: 180px;
     margin-right: 150px;
     margin-left: 80px;
 }
 #std3{
 	float: right;
-	margin-top: -409px;
+	margin-top: -750px;
     margin-bottom: 100px;
     margin-right: 150px;
     margin-left: 80px;
 }
 #std4{
 	float: right;
-	margin-top: -190px;
+	margin-top: -350px;
     margin-bottom: 100px;
     margin-right: 110px;
     margin-left: 80px;
 	
 }
+.imghome{
+    width: 50px;
+}
+
+
+
+#colours-navbar.navbar-default .navbar-brand {
+    color: rgba(161, 148, 148, 1);
+}
+#colours-navbar.navbar-default {
+    font-size: 20px;
+    background-color: rgba(28, 28, 36, 1);
+    border-width: 0px;
+    border-radius: 0px;
+}
+#colours-navbar.navbar-default .navbar-nav>li>a {
+    color: rgba(195, 7, 63, 1);
+    background-color: rgba(28, 28, 36, 1);
+}
+#colours-navbar.navbar-default .navbar-nav>li>a:hover,
+#colours-navbar.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(195, 7, 63, 1);
+    background-color: rgba(78, 78, 80, 1);
+}
+#colours-navbar.navbar-default .navbar-nav>.active>a,
+#colours-navbar.navbar-default .navbar-nav>.active>a:hover,
+#colours-navbar.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(195, 7, 63, 1);
+    background-color: rgba(28, 28, 36, 1);
+}
+#colours-navbar.navbar-default .navbar-toggle {
+    border-color: #1c1c24;
+}
+#colours-navbar.navbar-default .navbar-toggle:hover,
+#colours-navbar.navbar-default .navbar-toggle:focus {
+    background-color: #1c1c24;
+}
+#colours-navbar.navbar-default .navbar-toggle .icon-bar {
+    background-color: #1c1c24;
+}
+#colours-navbar.navbar-default .navbar-toggle:hover .icon-bar,
+#colours-navbar.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #1c1c24;
+}
+
