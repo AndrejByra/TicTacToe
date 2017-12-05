@@ -1,5 +1,5 @@
 var player=1;
-      function clickimg(value) {
+  function clickimg(value) {
         console.log(value);
         var row=Math.floor(value/10);
         var col=value%10;
@@ -7,18 +7,21 @@ var player=1;
         console.log(value);
         var row=Math.floor(value/10);
         var col=value%10;
-        var imageID="img"+row+col;
+        var imageID="img/img"+row+col;
         document.getElementById(imageID).src = "img/x.png" ;
+        console.log(imageID);
    }
  
  else {
         console.log(value);
         var row=Math.floor(value/10);
         var col=value%10;
-        var imageID="img"+row+col;
+        var imageID="img/img"+row+col;
         document.getElementById(imageID).src = "img/o.png" ;
+        console.log(imageID);
    }
     nextPlayer();
+    whoNext();
   }
   function nextPlayer(){
     if (player == 1) {
@@ -34,21 +37,21 @@ var player=1;
 { 
     if (value==1) 
     { 
-        var originName=$("#Player1").text(); 
-        $("#Player1").html("<INPUT TYPE=\"TEXT\" onFocusout=\"confirmName(1)\" ID=\"inputP1\" placeholder=\"Enter name\">"); 
+        var playersName=$("#Player1").text(); 
+        $("#Player1").html("<INPUT TYPE=\"TEXT\" onFocusout=\"createName(1)\" ID=\"inputP1\" placeholder=\"Enter name\">"); 
         $("#inputP1").focus(); 
     } 
  
     else 
     { 
-        var originName=$("#Player2").text(); 
-        $("#Player2").html("<INPUT TYPE=\"TEXT\" onFocusout=\"confirmName(2)\" ID=\"inputP2\" placeholder=\"Enter name\">"); 
+        var playersName=$("#Player2").text(); 
+        $("#Player2").html("<INPUT TYPE=\"TEXT\" onFocusout=\"createName(2)\" ID=\"inputP2\" placeholder=\"Enter name\">"); 
         $("#inputP2").focus(); 
     } 
  
 } 
  
-function confirmName (value) 
+function createName (value) 
 { 
     if (value==1) 
     { 
@@ -67,4 +70,22 @@ function confirmName (value)
         else  
             $("#Player2").text(name); 
     } 
+}
+function whoNext(){
+  if (player==1) {
+    document.getElementById('player').innerHTML="Player X turn ";
+  }
+  else{
+    document.getElementById('player').innerHTML="Player O turn ";
+  }
+
+}
+function whoNext(){
+  if (player==1) {
+    document.getElementById('player').innerHTML="X turn ";
+  }
+  else{
+    document.getElementById('player').innerHTML="X O turn ";
+  }
+
 }

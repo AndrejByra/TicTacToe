@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <title>TicTacToe</title>
+    <script src="script.js"></script>
+    <SCRIPT SRC="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></SCRIPT>
     
   </head>
-
   <body>
-  	
+  	<div id="player">
+      
+    </div>
   	<table  border="1">
             <tr> 
               <td><img src="img/white.jpg" class="field" id="img00" onclick="clickimg(00)"></td>
@@ -24,21 +27,16 @@
               <td><img src="img/white.jpg" class="field" id="img21" onclick="clickimg(21)"></td>
               <td><img src="img/white.jpg" class="field" id="img22" onclick="clickimg(22)"></td>
             </tr>
+    
             </table>
-
-<script>
-      function clickimg(value) {
-        console.log(value);
-        var row=Math.floor(value/10);
-        var col=value%10;
- 
-  var imageID="img"+row+col;
-     document.getElementById(imageID).src = "img/x.png" ;
-   }
-
-
-     </script>
+            <div>
+              <div CLASS="playersName" ID="Player1" ONDBLCLICK="changeName(1)">Player 1</DIV>
+            </div>
+            <div>
+              <div CLASS="playersName" ID="Player2" ONDBLCLICK="changeName(2)">Player 2</DIV>
+            </div>
+            
+     
 
   </body>
-
   </html>
