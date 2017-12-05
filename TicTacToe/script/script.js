@@ -30,3 +30,41 @@ var player=1;
  
   }
   }
+  function changeName (value) 
+{ 
+    if (value==1) 
+    { 
+        var originName=$("#Player1").text(); 
+        $("#Player1").html("<INPUT TYPE=\"TEXT\" onFocusout=\"confirmName(1)\" ID=\"inputP1\" placeholder=\"Enter name\">"); 
+        $("#inputP1").focus(); 
+    } 
+ 
+    else 
+    { 
+        var originName=$("#Player2").text(); 
+        $("#Player2").html("<INPUT TYPE=\"TEXT\" onFocusout=\"confirmName(2)\" ID=\"inputP2\" placeholder=\"Enter name\">"); 
+        $("#inputP2").focus(); 
+    } 
+ 
+} 
+ 
+function confirmName (value) 
+{ 
+    if (value==1) 
+    { 
+        var name=$("#inputP1").val(); 
+        if (name.trim().length==0) 
+            $("#Player1").text("Player 1"); 
+        else  
+            $("#Player1").text(name); 
+    } 
+ 
+    else 
+    { 
+        var name=$("#inputP2").val(); 
+        if (name.trim().length==0) 
+            $("#Player2").text("Player 2"); 
+        else  
+            $("#Player2").text(name); 
+    } 
+}
