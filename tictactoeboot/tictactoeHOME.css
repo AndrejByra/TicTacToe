@@ -1,6 +1,16 @@
 html body{
     background-color: rgb(152, 160, 173) ;
 }
+#gametable{
+    background-image: url('images/wood.jpg');
+}
+#paper{
+
+display: inline-block;
+float: right;
+
+
+}
 
 #std1{
 	margin-top: 50px;
@@ -29,6 +39,25 @@ html body{
     margin-left: 80px;
 	
 }
+/*
+#std1{
+    display: inline-block;
+}
+
+#std2{
+    float: right;
+    display: inline-block;
+
+}
+#std3{
+    display: inline-block;
+    float: left;
+
+}
+#std4{
+    float: right;
+    display: inline-block;
+}*/
 .imghome{
     width: 50px;
 }
