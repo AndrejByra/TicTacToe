@@ -1,42 +1,48 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>TicTacToe</title>
-    <script src="script.js"></script>
+<!DOCTYPE HTML>
+<HTML>
+  <HEAD>
+    <META CHARSET="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <SCRIPT SRC="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></SCRIPT>
-    
-  </head>
-  <body>
-  	<div id="player">
-      
-    </div>
-  	<table  border="1">
-            <tr> 
-              <td><img src="img/white.jpg" class="field" id="img00" onclick="clickimg(00)"></td>
-              <td><img src="img/white.jpg" class="field" id="img01" onclick="clickimg(01)"></td>
-              <td><img src="img/white.jpg" class="field" id="img02" onclick="clickimg(02)"></td>
-            </tr>
-            <tr>
-              <td><img src="img/white.jpg" class="field" id="img10" onclick="clickimg(10)"></td>
-              <td><img src="img/white.jpg" class="field" id="img11" onclick="clickimg(11)"></td>
-              <td><img src="img/white.jpg" class="field" id="img12" onclick="clickimg(12)"></td>
-            </tr>
-            <tr>
-              <td><img src="img/white.jpg" class="field" id="img20" onclick="clickimg(20)"></td>
-              <td><img src="img/white.jpg" class="field" id="img21" onclick="clickimg(21)"></td>
-              <td><img src="img/white.jpg" class="field" id="img22" onclick="clickimg(22)"></td>
-            </tr>
-    
-            </table>
-            <div>
-              <div CLASS="playersName" ID="Player1" ONDBLCLICK="changeName(1)">Player 1</DIV>
-            </div>
-            <div>
-              <div CLASS="playersName" ID="Player2" ONDBLCLICK="changeName(2)">Player 2</DIV>
-            </div>
-            
-     
 
-  </body>
-  </html>
+    <SCRIPT SRC="script/script.js"></SCRIPT>
+  </HEAD>
+  <div id="player"></div>
+  
+  <DIV class="row"> 
+    <div class="col-sm-3" >
+        <DIV CLASS="playersName" ID="Player1" onmouseover="printMessage()" onmouseout="removeMessage()" ONDBLCLICK="changeName(1)">Player 1</DIV><div id="message1"></div>
+         
+        
+  </DIV> 
+    <DIV  ALIGN="CENTER" class="col-sm-6">
+      <TABLE WIDTH="640" BORDER="2">
+        
+        <tr>
+              <td id="f0"><img src="img/white.jpg" class="field" id="img00" onclick="clickimg(00)"></td>
+              <td id="f1"><img src="img/white.jpg" class="field" id="img01" onclick="clickimg(01)"></td>
+              <td id="f2"><img src="img/white.jpg" class="field" id="img02" onclick="clickimg(02)"></td>
+            </tr>
+            <tr>
+              <td id="f3"><img src="img/white.jpg" class="field" id="img10" onclick="clickimg(10)"></td>
+              <td id="f4"><img src="img/white.jpg" class="field" id="img11" onclick="clickimg(11)"></td>
+              <td id="f5"><img src="img/white.jpg" class="field" id="img12" onclick="clickimg(12)"></td>
+            </tr>
+            <tr>
+              <td id="f6"><img src="img/white.jpg" class="field" id="img20" onclick="clickimg(20)"></td>
+              <td id="f7"><img src="img/white.jpg" class="field" id="img21" onclick="clickimg(21)"></td>
+              <td id="f8"><img src="img/white.jpg" class="field" id="img22" onclick="clickimg(22)"></td>
+            </tr>
+        </TABLE>
+  </div>
+   <DIV class="col-sm-3"  >
+      <DIV CLASS="playersName" ID="Player2"  onmouseover="printMessage()" onmouseout="removeMessage()" ONDBLCLICK="changeName(2)">Player 2</DIV> <div id="message2"></div>
+ 
+    </DIV> 
+  </div>
+ 
+    
+  </BODY>
+
+</HTML>
