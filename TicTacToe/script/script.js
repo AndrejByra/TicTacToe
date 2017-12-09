@@ -73,10 +73,10 @@ function createName (value)
 }
 function whoNext(){
   if (player==1) {
-    document.getElementById('player').innerHTML="Player X turn ";
+    document.getElementById('player').innerHTML=" X turn ";
   }
   else{
-    document.getElementById('player').innerHTML="Player O turn ";
+    document.getElementById('player').innerHTML=" O turn ";
   }
 
 }
@@ -85,7 +85,15 @@ function whoNext(){
     document.getElementById('player').innerHTML="X turn ";
   }
   else{
-    document.getElementById('player').innerHTML="X O turn ";
+    document.getElementById('player').innerHTML="O  turn ";
   }
 
 }
+function printMessage(){
+            document.getElementById("message1").innerHTML="double click to change name";
+            document.getElementById("message2").innerHTML="double click to change name";
+        }
+        function removeMessage(){
+            document.getElementById("message1").innerHTML=" ";
+            document.getElementById("message2").innerHTML=" ";
+        }
