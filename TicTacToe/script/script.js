@@ -7,7 +7,7 @@ var player=1;
         console.log(value);
         var row=Math.floor(value/10);
         var col=value%10;
-        var imageID="img/img"+row+col;
+        var imageID="img"+row+col;
         document.getElementById(imageID).src = "img/x.png" ;
         console.log(imageID);
    }
@@ -16,7 +16,7 @@ var player=1;
         console.log(value);
         var row=Math.floor(value/10);
         var col=value%10;
-        var imageID="img/img"+row+col;
+        var imageID="img"+row+col;
         document.getElementById(imageID).src = "img/o.png" ;
         console.log(imageID);
    }
