@@ -1,3 +1,17 @@
+html body{
+    background-color: rgb(152, 160, 173) ;
+}
+#gametable{
+    background-image: url('images/wood.jpg');
+}
+#paper{
+
+display: inline-block;
+float: right;
+
+
+}
+
 #std1{
 	margin-top: 50px;
     margin-bottom: 100px;
@@ -5,23 +19,146 @@
     margin-left: 80px;
 }
 #std2{
-	margin-top: 150px;
-    margin-bottom: 100px;
+	margin-top: 250px;
+    margin-bottom: 180px;
     margin-right: 150px;
     margin-left: 80px;
 }
 #std3{
 	float: right;
-	margin-top: -409px;
+	margin-top: -750px;
     margin-bottom: 100px;
     margin-right: 150px;
     margin-left: 80px;
 }
 #std4{
 	float: right;
-	margin-top: -190px;
+	margin-top: -350px;
     margin-bottom: 100px;
     margin-right: 110px;
     margin-left: 80px;
 	
 }
+/*
+#std1{
+    display: inline-block;
+}
+
+#std2{
+    float: right;
+    display: inline-block;
+
+}
+#std3{
+    display: inline-block;
+    float: left;
+
+}
+#std4{
+    float: right;
+    display: inline-block;
+}*/
+.imghome{
+    width: 50px;
+}
+
+
+
+#colours-navbar.navbar-default .navbar-brand {
+    color: rgba(161, 148, 148, 1);
+}
+#colours-navbar.navbar-default {
+    font-size: 20px;
+    background-color: rgba(28, 28, 36, 1);
+    border-width: 0px;
+    border-radius: 0px;
+}
+#colours-navbar.navbar-default .navbar-nav>li>a {
+    color: rgba(195, 7, 63, 1);
+    background-color: rgba(28, 28, 36, 1);
+}
+#colours-navbar.navbar-default .navbar-nav>li>a:hover,
+#colours-navbar.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(195, 7, 63, 1);
+    background-color: rgba(78, 78, 80, 1);
+}
+#colours-navbar.navbar-default .navbar-nav>.active>a,
+#colours-navbar.navbar-default .navbar-nav>.active>a:hover,
+#colours-navbar.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(195, 7, 63, 1);
+    background-color: rgba(28, 28, 36, 1);
+}
+#colours-navbar.navbar-default .navbar-toggle {
+    border-color: #1c1c24;
+}
+#colours-navbar.navbar-default .navbar-toggle:hover,
+#colours-navbar.navbar-default .navbar-toggle:focus {
+    background-color: #1c1c24;
+}
+#colours-navbar.navbar-default .navbar-toggle .icon-bar {
+    background-color: #1c1c24;
+}
+#colours-navbar.navbar-default .navbar-toggle:hover .icon-bar,
+#colours-navbar.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #1c1c24;
+}
+
+
+
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+.slide {display:none}
+.slideshow{
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color:red;
+}
+.next{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+  background-color: rgba(0,0,0,0.8);
+}
+.text{
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; 
+}
+.active, .dot:hover {
+  background-color: red;
+}
+.fade{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
