@@ -12,6 +12,10 @@ float: right;
 
 }
 
+#table{
+  
+  margin-top: 565px;
+}
 #std1{
 	margin-top: 50px;
     margin-bottom: 100px;
@@ -104,7 +108,7 @@ float: right;
 }
 
 
-
+/*
 * {box-sizing:border-box}
 body {font-family: Verdana,sans-serif;margin:0}
 .slide {display:none}
@@ -161,4 +165,4 @@ body {font-family: Verdana,sans-serif;margin:0}
   from {opacity: .4} 
   to {opacity: 1}
 }
-
+*/
