@@ -1,70 +1,42 @@
 html body{
     background-color: rgb(152, 160, 173) ;
-}
-#gametable{
-    background-image: url('images/wood.jpg');
-}
-#paper{
-
-display: inline-block;
-float: right;
-
+    
 
 }
 
-#table{
+#std1,#std2,#std3,#std4{
+    display:inline-block;
+}
+#std2{
+    margin-right:60px;
+}
+#std4{
+  margin-right: 10px;
+}
+
+.lastTwo{
+    margin-top: 260px;
+}
+
+.firstTwo {
+    margin-top:50px;
+
+}
+#std2,#std4{
+  float: right;
+}
+#grid2{
   
-  margin-top: 565px;
 }
-#std1{
-	margin-top: 50px;
-    margin-bottom: 100px;
-    margin-right: 150px;
-    margin-left: 80px;
-}
-#std2{
-	margin-top: 250px;
-    margin-bottom: 180px;
-    margin-right: 150px;
-    margin-left: 80px;
-}
-#std3{
-	float: right;
-	margin-top: -750px;
-    margin-bottom: 100px;
-    margin-right: 150px;
-    margin-left: 80px;
-}
-#std4{
-	float: right;
-	margin-top: -350px;
-    margin-bottom: 100px;
-    margin-right: 110px;
-    margin-left: 80px;
-	
-}
-/*
-#std1{
-    display: inline-block;
+#grid3{
+  float: right;
 }
 
-#std2{
-    float: right;
-    display: inline-block;
 
-}
-#std3{
-    display: inline-block;
-    float: left;
-
-}
-#std4{
-    float: right;
-    display: inline-block;
-}*/
 .imghome{
     width: 50px;
 }
+
 
 
 
