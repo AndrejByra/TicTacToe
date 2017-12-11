@@ -3,13 +3,11 @@ var gameBoard;
 var playerX = "X";
 var playerO = "O";
 var isTheEnd = false;
-var sizeBoard = 3;
+var sizeBoard = 5;
 var whoWon = "";
-var win1=0;
-var win2=0;
 
 function initGame() {
-  initBoard(3, 3);
+  initBoard(5, 5);
 }
 function clickimg(value, id) {
   if (!isTheEnd) {
@@ -35,7 +33,7 @@ function clickimg(value, id) {
       isMovePossible();
     }
   } else {
-    alert("game is over and winne is" + whoWon);
+    alert("game is over and winner is" + whoWon);
   }
 }
 function nextPlayer() {
@@ -138,17 +136,13 @@ function checkRow() {
     var rowSum = 0;
     for (var j = 0; j < sizeBoard; j++) {
       rowSum += gameBoard[i][j];
-      if (rowSum === 3) {
+      if (rowSum === 5) {
         whoWon = playerX;
         return true;
-        win1++;
-        wincounter1();
       }
-      if (rowSum === -3) {
+      if (rowSum === -5) {
         whoWon = playerO;
         return true;
-         win2++;
-        wincounter2();
       }
     }
   }
@@ -160,66 +154,54 @@ function checkColumns() {
     var colSum = 0;
     for (var j = 0; j < sizeBoard; j++) {
       colSum += gameBoard[j][i];
-      if (colSum === 3) {
+      if (colSum === 5) {
         whoWon = playerX;
         return true;
-        win1++;
-        wincounter1();
       }
-      if (colSum === -3) {
+      if (colSum === -5) {
         whoWon = playerO;
         return true;
-        win2++;
-        wincounter2();
       }
     }
   }
   return false;
 }
 function checkDiagonaleFor3X3() {
-  if (gameBoard[0][0] + gameBoard[1][1] + gameBoard[2][2] === 3) {
+  if (gameBoard[0][0] + gameBoard[1][1] + gameBoard[2][2] + gameBoard[3][3] + gameBoard[4][4] === 5) {
     whoWon = playerX;
     return true;
-    win1++;
-    wincounter1();
   }
-  if (gameBoard[0][0] + gameBoard[1][1] + gameBoard[2][2] === -3) {
+  if (gameBoard[0][0] + gameBoard[1][1] + gameBoard[2][2] + gameBoard[3][3] + gameBoard[4][4] === -5) {
     whoWon = playerO;
     return true;
-    win2++;
-     wincounter2();
   }
 
-  if (gameBoard[2][0] + gameBoard[1][1] + gameBoard[0][2] === 3) {
+  if (gameBoard[4][0] + gameBoard[3][1] + gameBoard[2][2] + gameBoard[1][3] + gameBoard[0][4] ===  5) {
     whoWon = playerX;
     return true;
-    win1++;
-    wincounter1();
   }
-  if (gameBoard[2][0] + gameBoard[1][1] + gameBoard[0][2] === -3) {
+  if (gameBoard[4][0] + gameBoard[3][1] + gameBoard[2][2] + gameBoard[1][3] + gameBoard[0][4] === -5) {
     whoWon = playerO;
     return true;
-    win2++;
-    wincounter2();
   }
   return false;
 }
 
 function isGameWon() {
-  if (sizeBoard === 3) {
+  if (sizeBoard === 5) {  
     if (checkColumns() || checkRow() || checkDiagonaleFor3X3()) {
       isTheEnd = true;
       cheers();
     }
-  } else if (sizeBoard === 4) {
+  } else if (sizeBoard === 5) {
     if (checkColumns() || checkRow() || checkDiagonaleFor4X4()) {
       isTheEnd = true;
     }
   }
 }
 function isMovePossible() {
-  for (var i = 0; i < 3; i++) {
-    for (var j = 0; j < 3; j++) {
+  for (var i = 0; i < 5; i++) {
+    for (var j = 0; j < 5; j++) {
       if (gameBoard[i][j] === 0) {
         return true;
       }
@@ -228,38 +210,13 @@ function isMovePossible() {
   alert("draw");
   return false;
 }
-
-  function cheers() {
+function cheers() {
 if (window.confirm('Winner is ' + whoWon + ' Play Again ?'))
 {
   window.location.reload();
-} 
+}
 else
 {
     
 }
-}
-function wincounter1() {
-    if(typeof(Storage) !== "undefined") {
-        if (localStorage.wincounter1) {
-            localStorage.wincounter1 = Number(localStorage.wincounter1)+1;
-        } else {
-            localStorage.wincounter1 = 1;
-        }
-        document.getElementById("score1").innerHTML = "You win " + localStorage.wincounter1 + " time(s).";
-    } else {
-        document.getElementById("score1").innerHTML = "Sorry, your browser does not support web storage...";
-    }
-}
-function wincounter2() {
-    if(typeof(Storage) !== "undefined") {
-        if (localStorage.wincounter2) {
-            localStorage.wincounter1 = Number(localStorage.wincounter2)+1;
-        } else {
-            localStorage.wincounter2 = 1;
-        }
-        document.getElementById("score2").innerHTML = "You win " + localStorage.wincounter2 + " time(s).";
-    } else {
-        document.getElementById("score2").innerHTML = "Sorry, your browser does not support web storage...";
-    }
 }
