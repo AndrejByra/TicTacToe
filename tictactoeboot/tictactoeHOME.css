@@ -1,8 +1,9 @@
 html body{
-    background-color: rgb(152, 160, 173) ;
-    
+   
+     background-color: rgb(152, 160, 173) ;
 
 }
+
 
 #std1,#std2,#std3,#std4{
     display:inline-block;
@@ -25,11 +26,9 @@ html body{
 #std2,#std4{
   float: right;
 }
-#grid2{
-  
-}
-#grid3{
-  float: right;
+
+#tab{
+ padding-top: 10%;
 }
 
 
