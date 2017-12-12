@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<HTML>
+
+<HEAD>
+  <META charset="UTF-8">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <SCRIPT SRC="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></SCRIPT>
+
+  <SCRIPT SRC="script/script4.js"></SCRIPT>
+</HEAD>
+
+<body onload="initGame()">
+  <div id="player"></div>
+
+  <DIV class="row">
+    <div class="col-sm-3">
+      <DIV CLASS="playersName" ID="Player1" onmouseover="printMessage()" onmouseout="removeMessage()" ONDBLCLICK="changeName(1)">Player 1</DIV>
+      <div id="message1"></div>
+
+
+    </DIV>
+    <DIV align="CENTER" class="col-sm-6">
+      <TABLE WIDTH="640" BORDER="2">
+
+        <tr>
+          <td id="f0">
+            <img src="img/white.jpg" class="field" id="img00" onclick="clickimg(00,this.id)">
+          </td>
+          <td id="f1">
+            <img src="img/white.jpg" class="field" id="img01" onclick="clickimg(01,this.id)">
+          </td>
+          <td id="f2">
+            <img src="img/white.jpg" class="field" id="img02" onclick="clickimg(02,this.id)">
+          </td>
+          <td id="f3">
+            <img src="img/white.jpg" class="field" id="img03" onclick="clickimg(03,this.id)">
+          </td>
+        </tr>
+        <tr>
+          <td id="f4">
+            <img src="img/white.jpg" class="field" id="img10" onclick="clickimg(10,this.id)">
+          </td>
+          <td id="f5">
+            <img src="img/white.jpg" class="field" id="img11" onclick="clickimg(11,this.id)">
+          </td>
+          <td id="f6">
+            <img src="img/white.jpg" class="field" id="img12" onclick="clickimg(12,this.id)">
+          </td>
+           <td id="f7">
+            <img src="img/white.jpg" class="field" id="img13" onclick="clickimg(13,this.id)">
+          </td>
+        </tr>
+        <tr>
+          <td id="f8">
+            <img src="img/white.jpg" class="field" id="img20" onclick="clickimg(20,this.id)">
+          </td>
+          <td id="f9">
+            <img src="img/white.jpg" class="field" id="img21" onclick="clickimg(21,this.id)">
+          </td>
+          <td id="f10">
+            <img src="img/white.jpg" class="field" id="img22" onclick="clickimg(22,this.id)">
+          </td>
+          <td id="f11">
+            <img src="img/white.jpg" class="field" id="img23" onclick="clickimg(23,this.id)">
+          </td>
+        </tr>
+        <tr>
+          <td id="f12">
+            <img src="img/white.jpg" class="field" id="img30" onclick="clickimg(30,this.id)">
+          </td>
+          <td id="f13">
+            <img src="img/white.jpg" class="field" id="img31" onclick="clickimg(31,this.id)">
+          </td>
+          <td id="f14">
+            <img src="img/white.jpg" class="field" id="img32" onclick="clickimg(32,this.id)">
+          </td>
+          <td id="f15">
+            <img src="img/white.jpg" class="field" id="img33" onclick="clickimg(33,this.id)">
+          </td>
+        </tr>
+      </TABLE>
+    </div>
+    <DIV class="col-sm-4">
+      <DIV CLASS="playersName" id="Player2" onmouseover="printMessage()" onmouseout="removeMessage()" ONDBLCLICK="changeName(2)">Player 2</DIV>
+      <div id="message2"></div>
+
+    </DIV>
+  </div>
+<button onclick="location.reload()">Restart</button>
+
+</body>
+
+</HTML>
