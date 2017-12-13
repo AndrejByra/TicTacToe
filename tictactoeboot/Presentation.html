@@ -27,54 +27,48 @@
 </div>
 
 <div class="slideshow">
-<div class="slide fade">
-  <img src="images/git.png" style="width:10%">
+<div class="slide">
+  <img id="actual" src="images/std1.jpg" style="width:100%; z-index: 7">
   <div class="text">text</div>
 </div>
-<div class="slide fade">
-  <img src="images/trello.png" style="width:10%">
-  <div class="text">text</div>
-</div>
-<div class="slide fade">
-  <img src="images/slack.png" style="width:10%">
-  <div class="text">text</div>
-</div>
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
+<a class="prev" onclick="showspic(-1)">&#10094;</a>
+<a class="next" onclick="showspic(1)">&#10095;</a>
 </div>
 <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentpic(1)"></span> 
+  <span class="dot" onclick="currentpic(2)"></span> 
+  <span class="dot" onclick="currentpic(3)"></span> 
+  <span class="dot" onclick="currentpic(4)"></span> 
 </div>
 
 <script>
+var actual = 1;
+
 var slideIndex = 1;
-showSlides(slideIndex);
+showspic(slideIndex);
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showspic(slideIndex += n);
 }
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentpic(n) {
+  showspic(slideIndex = n);
 }
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slide");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+function showspic(n) {
+  console.log(n);
+  console.log(actual);
+  actual = parseInt(actual) + parseInt(n);
+  if(actual <= 0)
+  {
+    actual = 4;
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace("active");
+  if(actual > 4)
+  {
+    actual = 1;
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " ctive";
+  document.getElementById("actual").src = "images/std"+actual+".jpg";
 }
 </script>
 
-<table id="table">
+<table align="center" id="table">
     <tr>
     <td><a href="https://trello.com/b/eOVdPzKD/tictactoe"><img src="images/trello.png" class="imghome"></a></td>
     <td><a href="https://github.com/AndrejByra/TicTacToe"><img src="images/git.png" class="imghome"></a></td>
