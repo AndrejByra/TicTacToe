@@ -10,6 +10,7 @@ html body{
 width: 79%;
 display: block;
   margin: 0 auto;
+
 }
 #paper2{
 width: 79%;
@@ -21,7 +22,26 @@ width: 79%;
 display: block;
   margin: 0 auto;
 }
+#tab3{
+  position: absolute;
+   margin-top:130px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 230px;
+}
+#tab4{
+  position: absolute;
+   margin-top:105px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 200px;}
 
+#tab5{
+  position: absolute;
+   margin-top:115px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 220px;}
 
 
 
