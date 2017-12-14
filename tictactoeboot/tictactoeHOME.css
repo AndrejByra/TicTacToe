@@ -1,8 +1,29 @@
 html body{
-   
+
      background-color: rgb(152, 160, 173) ;
 
 }
+.bg{
+  background-image: url(images/vfvf.jpg);
+}
+#paper1{
+width: 79%;
+display: block;
+  margin: 0 auto;
+}
+#paper2{
+width: 79%;
+display: block;
+  margin: 0 auto;
+}
+#paper3{
+width: 79%;
+display: block;
+  margin: 0 auto;
+}
+
+
+
 
 
 #std1,#std2,#std3,#std4{
@@ -118,7 +139,7 @@ body {font-family: Verdana,sans-serif;margin:0}
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease; 
+  transition: background-color 0.6s ease;
 }
 .active, .dot:hover {
   background-color: red;
@@ -130,7 +151,6 @@ body {font-family: Verdana,sans-serif;margin:0}
   animation-duration: 1.5s;
 }
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
-
