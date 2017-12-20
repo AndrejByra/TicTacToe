@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<HTML>
+
+<HEAD>
+  <META charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="tictactoeHOME.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <SCRIPT SRC="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></SCRIPT>
+  <script src="bower_components/sweetalert2/dist/sweetalert2.all.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+
+  <SCRIPT SRC="script/script.js"></SCRIPT>
+</HEAD>
+
+<body class="bg" onload="initGame()" >
+	<div class="container-fluid">
+    <div class="row">
+<div class="col-md-2">
+  <div id="player"></div>
+      <div id="showAlertO" style="display:none">Winner id O <button onclick="location.reload()">reset</button><button ><a href="testjs.html"> Back to Menu </a> </button></div>
+      
+      <div id="showAlertX" style="display:none">Winner is X<button onclick="location.reload()">reset</button><button><a  href="testjs.html">Back to Menu</a>></button></div>
+      
+      <div id="showAlertB" style="display:none">Tie<button onclick="location.reload()">reset</button><button><a  href="testjs.html">Back to Menu</a>></button></div>
+</div>
+
+      <div class="col-md-8">
+      <TABLE  align="center" id="tab3" >
+        <tr>
+          <td id="f0">
+            <img src="img/white.png" class="field" id="img00" onclick="clickimg(0,0,this.id)">
+          </td>
+          <td id="f1">
+            <img src="img/white.png" class="field" id="img01" onclick="clickimg(0,1,this.id)">
+          </td>
+          <td id="f2">
+            <img src="img/white.png" class="field" id="img02" onclick="clickimg(0,2,this.id)">
+          </td>
+        </tr>
+        <tr>
+          <td id="f3">
+            <img src="img/white.png" class="field" id="img10" onclick="clickimg(1,0,this.id)">
+          </td>
+          <td id="f4">
+            <img src="img/white.png" class="field" id="img11" onclick="clickimg(1,1,this.id)">
+          </td>
+          <td id="f5">
+            <img src="img/white.png" class="field" id="img12" onclick="clickimg(1,2,this.id)">
+          </td>
+        </tr>
+        <tr>
+          <td id="f6">
+            <img src="img/white.png" class="field" id="img20" onclick="clickimg(2,0,this.id)">
+          </td>
+          <td id="f7">
+            <img src="img/white.png" class="field" id="img21" onclick="clickimg(2,1,this.id)">
+          </td>
+          <td id="f8">
+            <img src="img/white.png" class="field" id="img22" onclick="clickimg(2,2,this.id)">
+          </td>
+        </tr>
+      </TABLE>
+      </div>
+
+    
+      <div class="col-md-2">
+   
+     <div class="homebutton"><a href="testjs.html"><img src="images/homeback.png" width="15%"></a></div>
+      </div>
+<img id="paper1" src="images/pavfvper.png">
+
+</div>
+</div>
+
+</body>
+
+</HTML>
