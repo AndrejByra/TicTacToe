@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TicTacToe</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="tictactoeHOME.css">
+    <script SRC="script/script.js"></script>
+</head>
+<body >
+<div id="colnav" class="navbar navbardef" role="navigation" >
+    <div class="container-fluid">
+        <div class="navbar-header"><a class="navbar-brand" href="#"><img src="images/logo.png" width="28%"></a>
+            </button>
+        </div>
+        <div>
+            <ul class="nav navbar-nav navbar-left" >
+                <li><a data-toggle="tab" href="#Home">Home</a>
+                </li>
+                <li><a data-toggle="tab" href="#Presentation">Presentation</a>
+                </li>
+                <li><a data-toggle="tab" href="#Game">Game</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+  <div class="tab-content">
+    <div id="Home" class="tab-pane fade in active" >
+      <div id="bckghome"><img src="images/homelogo.png" width="150%"></div>
+      <div class="firstTwo" class="col-lg-6">
+      
+<div id="std1" class="student1">
+    <ul >
+        <img id="ft1" src="images/std1.jpg" class="img-circle" width="100">
+        <li><b>Name</b>: Oleh Vynnyk</li>
+        <li><b>E-mail</b>: oleh.vynnyk@akademiasovy.sk
+        </li>
+        <li><b>Position</b>: Design</li>
+    </ul>
+</div>
+<div id="std2" class="float-right student2" >
+    <ul>
+        <img src="images/std2.jpg" class="img-circle" width="100">
+        <li><b>Name</b>: Andrej Byra</li>
+        <li><b>E-mail</b>: andej.byra@akademiasovy.sk
+        </li>
+        <li><b>Position</b>: Design</li>
+    </ul>
+        </div>
+        </div>
+
+        <div></div>
+
+    <div class="lastTwo align-bottom" class="col-lg-6">
+<div id="std3" class="student3">
+    <ul>
+        <img src="images/std3.jpg" class="img-circle" width="100">
+        <li><b>Name</b>: Milan Timko</li>
+        <li><b>E-mail</b>: milan.timko@akademiasovy.sk
+        </li>
+        <li><b>Position</b>: Javascript</li>
+    </ul>   
+</div>
+<div id="std4" >
+    <ul>
+        <img src="images/std4.jpg" class="img-circle" width="100">
+        <li><b>Name</b>: Kristina Kolesarova</li>
+        <li><b>E-mail</b>: kristina.kolesarova@akademiasovy.sk
+        </li>
+        <li><b>Position</b>: Javascript</li>
+    </ul>   
+</div>
+</div> 
+
+
+    </div>
+
+
+
+    <div id="Presentation" class="tab-pane fade">
+<div class="slideshow">
+<div class="slide">
+  <img id="actual" src="images/b1.png" style="width:100%; z-index: 7">
+  
+</div>
+<a class="prev" onclick="showspic(-1)">&#10094;</a>
+<a class="next" onclick="showspic(1)">&#10095;</a>
+</div>
+
+
+<table align="center" id="table">
+    <tr>
+    <td><a href="https://trello.com/b/eOVdPzKD/tictactoe"><img src="images/trello.png" class="imghome"></a></td>
+    <td><a href="https://github.com/AndrejByra/TicTacToe"><img src="images/git.png" class="imghome"></a></td>
+    <td><a href="https://tictactoe-workspace.slack.com/messages/C88QABEPN/"><img src="images/slack.png" class="imghome"></a></td>
+</tr>
+</table>
+    </div>
+
+
+    <div id="Game" class="tab-pane fade">
+      <div align="center"><img src="images/logo.png" ></div>
+      
+      <div align="center" id="gamebuttons">
+
+<div class="container" class="col-md-2">
+  <img src="images/3x3hower.png"  class="image" >
+  <div class="overlay">
+    <a href="3x3.html"><button class="gamebutton" onclick="setSizeBoard(3)">3x3</button></a>
+  </div>
+</div>
+
+<div class="container" class="col-md-8">
+  <img src="images/4x4hower.png"  class="image" >
+  <div class="overlay">
+    <a href="4x4.html"><button class="gamebutton" onclick="setSizeBoard(4)">4x4</button></a>
+  </div>
+</div>
+
+<div class="container" class="col-md-2">
+  <img src="images/5x5hower.png"  class="image" >
+  <div class="overlay">
+    <a href="5x5.html"><button class="gamebutton" onclick="setSizeBoard(5)">5x5</button></a>
+  </div>
+</div>
+
+</div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+var actual = 1;
+
+var slideIndex = 1;
+showspic(slideIndex);
+function plusSlides(n) {
+  showspic(slideIndex += n);
+}
+function currentpic(n) {
+  showspic(slideIndex = n);
+}
+function showspic(n) {
+  console.log(n);
+  console.log(actual);
+  actual = parseInt(actual) + parseInt(n);
+  if(actual <= 0)
+  {
+    actual = 7;
+  }
+  if(actual > 7)
+  {
+    actual = 1;
+  }
+  document.getElementById("actual").src = "images/b"+actual+".png";
+}
+</script>
+
+
+</body>
+</html>
