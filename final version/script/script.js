@@ -289,8 +289,8 @@ function isGameWon(x, y) {
   }
   if (isMovePossible() == false) {
     isTheEnd = true;
-    if (window.confirm("Draw , Play Again ?")) {
-      window.location.reload();
-    }
+    cheers();
+      
+    
   }
 }

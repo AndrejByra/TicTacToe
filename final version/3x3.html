@@ -6,9 +6,6 @@
 <link rel="stylesheet" type="text/css" href="tictactoeHOME.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <SCRIPT SRC="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></SCRIPT>
-  <script src="bower_components/sweetalert2/dist/sweetalert2.all.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
 
   <SCRIPT SRC="script/script.js"></SCRIPT>
 </HEAD>
@@ -17,12 +14,41 @@
 	<div class="container-fluid">
     <div class="row">
 <div class="col-md-2">
-  <div id="player"></div>
-      <div id="showAlertO" style="display:none">Winner id O <button onclick="location.reload()">reset</button><button ><a href="testjs.html"> Back to Menu </a> </button></div>
-      
-      <div id="showAlertX" style="display:none">Winner is X<button onclick="location.reload()">reset</button><button><a  href="testjs.html">Back to Menu</a>></button></div>
-      
-      <div id="showAlertB" style="display:none">Tie<button onclick="location.reload()">reset</button><button><a  href="testjs.html">Back to Menu</a>></button></div>
+  <div id="player">X turn</div>
+  <table id="gametable" >
+          
+            <td>
+              <div id="showAlertO" style="display:none" class="alertbuttons">Winner is:<b>O!</b><br>
+
+            <a href="3x3.html"><button class="alertbutton" onclick="location.reload()">reset</button></a>
+
+
+            <a href="index.html"><button class="alertbutton">back to menu</button></a>
+          </div>
+
+         
+
+           <div id="showAlertX" style="display:none" class="alertbuttons">Winner is:<b>X!</b><br>
+
+            <a href="3x3.html"><button class="alertbutton" onclick="location.reload()">reset</button></a>
+
+
+            <a href="index.html"><button class="alertbutton">back to menu</button></a>
+          </div>
+
+
+            <div id="showAlertB" style="display:none" class="alertbuttons">Draw<br>
+
+            <a href="3x3.html"><button class="alertbutton" onclick="location.reload()">reset</button></a>
+
+
+            <a href="index.html"><button class="alertbutton">back to menu</button></a>
+          </div>
+
+            </td>
+          
+         
+        </table>
 </div>
 
       <div class="col-md-8">
@@ -66,13 +92,12 @@
     
       <div class="col-md-2">
    
-     <div class="homebutton"><a href="testjs.html"><img src="images/homeback.png" width="15%"></a></div>
+     
       </div>
 <img id="paper1" src="images/pavfvper.png">
 
 </div>
 </div>
-
 </body>
 
 </HTML>

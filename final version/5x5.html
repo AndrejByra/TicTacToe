@@ -16,18 +16,47 @@
 
 
       <div class="col-md-2">
-        <div id="player"></div>
-        <div id="showAlertO" style="display:none">Winner id O <button onclick="location.reload()">reset</button><button ><a href="testjs.html"> Back to Menu </a> </button></div>
-      
-      <div id="showAlertX" style="display:none">Winner is X<button onclick="location.reload()">reset</button><button><a  href="testjs.html">Back to Menu</a>></button></div>
-      
-      <div id="showAlertB" style="display:none">Tie<button onclick="location.reload()">reset</button><button><a  href="testjs.html">Back to Menu</a>></button></div>
+        <div id="player">X turn</div>
+         <table id="gametable" >
+          
+            <td>
+              <div id="showAlertO" style="display:none" class="alertbuttons">Winner is:<b>O!</b><br>
+
+            <a href="5x5.html"><button class="alertbutton" onclick="location.reload()">reset</button></a>
+
+
+            <a href="index.html"><button class="alertbutton">back to menu</button></a>
+          </div>
+
+         
+
+           <div id="showAlertX" style="display:none" class="alertbuttons">Winner is:<b>X!</b><br>
+
+            <a href="5x5.html"><button class="alertbutton" onclick="location.reload()">reset</button></a>
+
+
+            <a href="index.html"><button class="alertbutton">back to menu</button></a>
+          </div>
+
+
+            <div id="showAlertB" style="display:none" class="alertbuttons">Draw<br>
+
+            <a href="5x5.html"><button class="alertbutton" onclick="location.reload()">reset</button></a>
+
+
+            <a href="index.html"><button class="alertbutton">back to menu</button></a>
+          </div>
+
+            </td>
+          
+         
+        </table>
       </div>
       <div class="col-md-8">
         <TABLE align="CENTER" id="tab5">
 
           <tr>
-            <td id="f0">
+            <td id="f0" >
               <img src="img/white5.png" class="field" id="img00" onclick="clickimg(0,0,this.id)">
             </td>
             <td id="f1">
@@ -115,11 +144,7 @@
       </div>
 
       <div class="col-md-2">
-        <div class="homebutton">
-          <a href="testjs.html">
-            <img src="images/homeback.png" width="15%">
-          </a>
-        </div>
+       
 
       </div>
 
